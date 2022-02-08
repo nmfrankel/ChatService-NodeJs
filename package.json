@@ -1,0 +1,23 @@
+{
+  "name": "ChatService",
+  "version": "1.0.0",
+  "description": "This will be a full features chat app including all of the RTC chat standards.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmfrankel/ChatService.git"
+  },
+  "keywords": [],
+  "author": "Nosson M Frankel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nmfrankel/ChatService/issues"
+  },
+  "homepage": "https://github.com/nmfrankel/ChatService#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
