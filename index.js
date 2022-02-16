@@ -16,8 +16,12 @@ app.use(methodOverride('_method'));
 app.use(express.static('public'))
 
 // api endpoint
-app.use('/api', require('./api.js'))
+app.use('/api', require('./routes/api'))
 
+// index page
+app.get('/', (req, res) => {
+	res.send('Hello World!<br>Coming soon')
+})
 
 /* ROUTER:END */
 /* ROUTER:END */
@@ -31,8 +35,4 @@ app.use(express.static('public')) // just middleware
 app.use('/static', express.static('public'))// middleware with a defined path
 
 app.use('/birds', require('./birds.js'))
-
-app.get('/', (req, res) => {
-	res.send('Hello World!')
-})
 */
